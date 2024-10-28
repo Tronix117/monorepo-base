@@ -1,0 +1,12 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+**/dist
+.git
+.gitignore
+exception.log
+rejections.log
+*.md
+**/.expo
+**/.env*.local
