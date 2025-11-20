@@ -3,9 +3,13 @@ import { AppService } from './app.service'
 
 describe('AppService', () => {
   it('getState returns ok + hello message', () => {
+    // Arrange
     const service = new AppService()
+    
+    // Act
     const state = service.getState()
 
+    // Assert
     expect(state.status).toBe('ok')
     expect(typeof state.timestamp).toBe('string')
     expect(typeof state.uptime).toBe('number')
