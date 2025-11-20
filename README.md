@@ -1,5 +1,4 @@
 # Cook-Me
-baby
 
 
 ## Structure
