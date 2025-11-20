@@ -5,7 +5,7 @@ module.exports = config => ({
   externals: [
     ...config.externals,
     nodeExternals({
-      allowlist: [/^@my-project\//],
+      allowlist: [/^@cook-me\//],
     }),
   ],
 })

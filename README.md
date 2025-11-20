@@ -1,11 +1,6 @@
-# Monorepo exemple setup
+# Cook-Me
+baby
 
-This repository is a bootstrap exemple for a project with multiple apps :
-
-- api (NestJS)
-- web (NextJS)
-
-Using pnpm workspaces (and turborepo for conveniance)
 
 ## Structure
 
@@ -14,7 +9,7 @@ apps => application that can be started
 packages => shared packages
 ```
 
-Every package or app must have a `package.json` file describing dependencies, naming of the package should be `@my-project/package-name` (change my-project by what you want but keep consistency).
+Every package or app must have a `package.json` file describing dependencies, naming of the package should be `@cook-me/package-name` (change my-project by what you want but keep consistency).
 
 ## Setup
 
@@ -26,13 +21,27 @@ For linting, you can replace biome with packages/eslint you will find an exemple
 
 ## Develop
 
-### Run the project with
+### Run the project 
 
 ```
 pnpm dev
 ```
 
 all apps will be launched in parallel.
+
+### Run Expo only
+
+in /apps/mobile
+```
+pnpm dev
+```
+
+### Run Nest only
+
+in /apps/api
+```
+pnpm dev
+```
 
 ### Build the project
 
@@ -80,8 +89,8 @@ Also if one app is ESM and the other is CommonJS, it will cause issues, and will
 Precompiling package also means dependency can have trouble being tree-shaken.
 
 The approach here is to use :
-* webpack on NestJS, compiling everything and using `node-externals` for exclusions (like node_modules) except for the packages starting by our prefix `@my-project`
-* transpilePackages on NextJS, to compile the packages starting by our prefix `@my-project`
+* webpack on NestJS, compiling everything and using `node-externals` for exclusions (like node_modules) except for the packages starting by our prefix `@cook-me`
+* transpilePackages on NextJS, to compile the packages starting by our prefix `@cook-me`
 
 This way, the apps themselves use the package sources directly without the need to be precompiled first.
 

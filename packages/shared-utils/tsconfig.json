@@ -1,5 +1,5 @@
 {
-  "extends": "@my-project/tsconfig/base.json",
+  "extends": "@cook-me/tsconfig/base.json",
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist"

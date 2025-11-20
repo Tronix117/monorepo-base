@@ -1,5 +1,5 @@
 {
-  "name": "@my-project/api",
+  "name": "@cook-me/api",
   "version": "0.0.0",
   "private": true,
   "type": "commonjs",
@@ -12,7 +12,7 @@
     "test:cov": "vitest run --coverage"
   },
   "dependencies": {
-    "@my-project/shared-utils": "workspace:^",
+    "@cook-me/shared-utils": "workspace:^",
     "@nestjs/cli": "^11.0.10",
     "@nestjs/common": "^11.1.9",
     "@nestjs/core": "^11.1.9",
@@ -21,7 +21,7 @@
     "run-script-webpack-plugin": "^0.2.3"
   },
   "devDependencies": {
-    "@my-project/tsconfig": "workspace:^",
+    "@cook-me/tsconfig": "workspace:^",
     "@nestjs/schematics": "^11.0.9",
     "@nestjs/testing": "^11.1.9",
     "@types/node": "^24.10.1",

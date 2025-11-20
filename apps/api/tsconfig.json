@@ -1,9 +1,9 @@
 {
-  "extends": "@my-project/tsconfig/nest.json",
+  "extends": "@cook-me/tsconfig/nest.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@my-project/shared-utils": ["../../packages/shared-utils/src"]
+      "@cook-me/shared-utils": ["../../packages/shared-utils/src"]
     }
   },
   "include": ["src/**/*.ts", "test/app.e2e-spec.ts"],
