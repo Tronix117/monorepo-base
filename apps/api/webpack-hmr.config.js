@@ -6,7 +6,7 @@ module.exports = (options, webpack) => ({
   entry: ['webpack/hot/poll?100', options.entry],
   externals: [
     nodeExternals({
-      allowlist: [/^@my-project\//, 'webpack/hot/poll?100'],
+      allowlist: [/^@cook-me\//, 'webpack/hot/poll?100'],
     }),
   ],
   plugins: [
